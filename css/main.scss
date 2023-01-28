@@ -1,0 +1,29 @@
+// Los tamaños de bootstrap (espaciados) se basan en porciones REM
+// Ej: "p-1" donde 1 (0-5 disponibles) equivale a 0.25rem
+// 5 sería equivalente a 1rem 
+
+* {
+  transition: all 0.5s;
+}
+
+h3 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3rem;
+}
+
+p,
+a {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    &.rounded-bottom-0 {
+      border-radius: 0.5rem 0rem 0rem 0.5rem !important;
+    }
+    &.rounded-top-0 {
+      border-radius: 0rem 0.5rem 0.5rem 0rem !important;
+    }
+  }
+}
